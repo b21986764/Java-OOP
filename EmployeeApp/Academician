@@ -1,0 +1,26 @@
+
+
+//Subclass Academician of superclass Personnel extends its methods 
+public class Academician extends Personnel {
+	
+	//Additional fields to Personnel class that Academician have
+	private static final int baseSalary = 2600;
+	private int ssBenefits;
+	
+	//Constructor of Academician class with super keyword to inherit Personnel
+	public Academician(String name,String surname, String position, double severancePay, String registerNumber, int yearOfStart,int [] workArr) {
+		super(name,surname,position,severancePay,registerNumber,yearOfStart,workArr);
+		
+	}
+	//Getters and setters for additional fields
+	public int getSsBenefits() {
+		return ssBenefits;
+	}
+	public void setSsBenefits(int ssBenefits) {
+		this.ssBenefits = ssBenefits;
+	}
+	public static int getBasesalary() {
+		return baseSalary;
+	}
+	
+}
